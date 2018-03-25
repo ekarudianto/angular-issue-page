@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+.detail-badge {
+    span.badge {
+        .icon {
+            span.label {
+                font-size: 14px;
+            }
+        }
+        .octicon {
+            color: #FFF !important;
+        }
+    }
+}
+
+.comment-box {
+    .body {
+        img {
+            width: 100%;
+        }
+    }
+}
