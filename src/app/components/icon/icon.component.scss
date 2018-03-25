@@ -1,0 +1,21 @@
+.icon {
+    position: relative;
+
+    .octicon {
+    fill:currentColor;
+    }
+    
+    .octicon.closed {
+    color: #cb2431;
+    }
+    
+    .octicon.open {
+    color: #28a745;
+    }
+
+    span.label {
+      font-size: 12px;
+      float: right;
+      margin-left: 5px;
+    }
+}
