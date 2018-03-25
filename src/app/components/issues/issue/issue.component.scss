@@ -1,0 +1,35 @@
+.issue {
+    .align-right {
+      text-align: right;
+    }
+    
+    padding: 15px;
+    border-left: 1px solid #e1e4e8;
+    border-right: 1px solid #e1e4e8;
+    border-bottom: 1px solid #e1e4e8;
+
+    &:hover{
+      background: #F6F8FA;
+    }
+
+    .title {
+      font-weight: 600;
+      
+      a {
+        &:hover {
+          color: #1269D3;
+        }
+        color: #000;
+        text-decoration: none;
+      }
+    }
+
+    .labels {
+      margin: 2px 0;
+    }
+
+    .subtitle {
+      color: #586069;
+      font-size: 12px;
+    }
+}

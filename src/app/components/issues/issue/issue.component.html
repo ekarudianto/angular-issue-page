@@ -1,0 +1,20 @@
+<!-- Put extra ngIf to pass the unit test -->
+<div *ngIf="issue" class="issue container">
+  <div class="row">
+    <div class="col-1">
+      <app-icon [icon]="issue.state"></app-icon>
+    </div>
+    <div class="col">
+      <div class="title">
+        <a routerLink="/issue/{{ issue.number }}">{{ issue.title }}</a>
+        <span class="labels" *ngIf="issue.labels.length > 0">
+            <app-label [color]="label.color" [name]="label.name" *ngFor="let label of issue.labels"></app-label>
+        </span>
+      </div>
+      <div class="subtitle">{{ issue.summary }}</div>
+    </div>
+    <div class="col-2 align-right">
+      <app-icon *ngIf="issue.comments != 0" [icon]="'comments'" [label]="issue.comments"></app-icon>
+    </div>
+  </div>
+</div>
