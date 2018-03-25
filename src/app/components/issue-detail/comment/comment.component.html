@@ -1,0 +1,15 @@
+<div class="row comment">
+  <div *ngIf="user" class="col-1 d-none d-sm-none d-md-none d-lg-block">
+    <img class="avatar" [src]="user.avatar_url"/>
+  </div>
+  <div class="col">
+    <div class="comment-box">
+      <div class="header">
+        {{ summary }}
+      </div>
+      <div class="body" Markdown>
+        {{ body }}
+      </div>
+    </div>
+  </div>
+</div>

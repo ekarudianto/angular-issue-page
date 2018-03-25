@@ -1,0 +1,29 @@
+.comment {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+    .avatar {
+        width: 100%;
+        max-width: 44px;
+        max-height: 44px;
+    }
+
+    .comment-box {
+        border: 1px solid #d1d5da;
+        width: 100%;
+        border-radius: 4px;
+
+        .header {
+            background: #F6F8FA;
+            padding: 12px 20px;
+            font-size: 13px;
+            border-bottom: 1px solid #d1d5da;
+        }
+
+        .body {
+            padding: 12px 20px;
+            word-break: break-word;
+            font-size: 13px;
+        }
+    }
+}

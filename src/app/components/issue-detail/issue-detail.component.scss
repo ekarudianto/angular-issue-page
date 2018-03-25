@@ -1,0 +1,27 @@
+.issue-detail {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    h2 {
+        span.grey {
+            color: #A3AAB1;
+        }
+    }
+
+    .summary {
+        font-size: 14px;
+        color: #586069;
+    }
+
+    .detail-badge {
+        span.badge {
+            background: #C92736;
+            padding: 7px 10px;
+            color: #FFF;
+        }
+
+        span.badge.open {
+            background: #36BC53;
+        }
+    }
+}

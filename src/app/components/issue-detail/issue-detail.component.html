@@ -1,0 +1,26 @@
+<div *ngIf="issue" class="container issue-detail">
+  <h2>{{ issue.title }} <span class="grey">#{{ issue.number }}</span></h2>
+  <div class="detail-badge">
+    <span class="badge" [ngClass]="{'open' : issue.state === 'open'}">
+      <app-icon [icon]="issue.state" [label]="issue.state"></app-icon>
+    </span>
+    <span class="summary">
+      {{ issue.inDetailSummary }} · {{ issue.comments }} comment
+    </span>
+  </div>
+  <hr>
+  <div>
+    <app-comment 
+      [summary]="issue.commentSummary"
+      [body]="issue.body"
+      [user]="issue.user"
+    ></app-comment>
+
+    <app-comment 
+      *ngFor="let comment of comments"
+      [summary]="comment.commentSummary"
+      [body]="comment.body"
+      [user]="comment.user"
+    ></app-comment>
+  </div>
+</div>
