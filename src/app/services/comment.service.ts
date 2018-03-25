@@ -18,7 +18,7 @@ export class CommentService {
 
   getComments(url: string): Observable<Comment[]> {
     console.log(url);
-    return this.http.get<Comment[]>(`${url}?client_id=d2f3494288a2f59ab475&client_secret=a3bab3f3e2859f58c2b7455f741bc55b7b967117`).pipe(
+    return this.http.get<Comment[]>(`${url}`).pipe(
       map(comments => {
         return comments.map(comment => Object.assign(new Comment(comment), comment));
       }),

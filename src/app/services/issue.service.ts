@@ -19,7 +19,7 @@ export class IssueService {
   }
 
   getIssues (): Observable<Issue[]> {
-    const url = `${this.issuesURL}/issues?state=all&client_id=d2f3494288a2f59ab475&client_secret=a3bab3f3e2859f58c2b7455f741bc55b7b967117`;
+    const url = `${this.issuesURL}/issues?state=all`;
     return this.http.get<Issue[]>(url)
       .pipe(
         map(issues => {
@@ -30,7 +30,7 @@ export class IssueService {
   }
 
   getIssue(id: number): Observable<Issue> {
-    const url = `${this.issuesURL}/issues/${id}?client_id=d2f3494288a2f59ab475&client_secret=a3bab3f3e2859f58c2b7455f741bc55b7b967117`;
+    const url = `${this.issuesURL}/issues/${id}`;
     return this.http.get<Issue>(url).pipe(
       map(issue => Object.assign(new Issue(issue), issue)),
       catchError(this.handleError<Issue>(`getIssue id=${id}`))

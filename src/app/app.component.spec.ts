@@ -1,5 +1,5 @@
-import { TestBed, async } from '@angular/core/testing';
 import { APP_BASE_HREF } from '@angular/common';
+import { TestBed, async } from '@angular/core/testing';
 
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -23,16 +23,16 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent,
         CommentComponent,
-        IssuesComponent,
+        IconComponent,
         IssueComponent,
         IssueDetailComponent,
-        IconComponent,
+        IssuesComponent,
         LabelComponent,
       ],
       imports: [
         AppRoutingModule,
+        BrowserModule,
         HttpClientModule,
-        BrowserModule
       ],
       providers: [
         { provide: APP_BASE_HREF, useValue : '/' },

@@ -35,13 +35,13 @@ describe('IssueService', () => {
       ],
       imports: [
         AppRoutingModule,
+        BrowserModule,
         HttpClientModule,
-        BrowserModule
       ],
       providers: [
         { provide: APP_BASE_HREF, useValue : '/' },
+        IssueService,
         MockBackend,
-        IssueService
       ],
     });
 

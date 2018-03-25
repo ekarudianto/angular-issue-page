@@ -19,17 +19,17 @@ import { LabelComponent } from './components/label/label.component';
 @NgModule({
   declarations: [
     AppComponent,
-    IssuesComponent,
-    IssueComponent,
-    IconComponent,
-    LabelComponent,
-    IssueDetailComponent,
     CommentComponent,
+    IconComponent,
+    IssueComponent,
+    IssueDetailComponent,
+    IssuesComponent,
+    LabelComponent,
   ],
   imports: [
     AppRoutingModule,
-    HttpClientModule,
     BrowserModule,
+    HttpClientModule,
     MarkdownModule.forRoot(),
   ],
   providers: [ CommentService, IssueService ],
